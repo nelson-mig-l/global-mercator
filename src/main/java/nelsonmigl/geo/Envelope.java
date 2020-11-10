@@ -1,7 +1,5 @@
 package nelsonmigl.geo;
 
-import javafx.scene.chart.PieChart;
-
 public class Envelope {
 
     private double minX;
