@@ -126,7 +126,7 @@ public class GlobalMercator {
                 }
             }
         }
-        throw new RuntimeException();
+        throw new GlobalMercatorException();
     }
 
     /**
