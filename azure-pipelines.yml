@@ -27,8 +27,10 @@ steps:
     script: |
       # Write your commands here
       echo '$(Build.ArtifactStagingDirectory)'
+      echo '$(Build.SourcesDirectory)'
+      echo '$(Agent.BuildDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '/home/vsts/work/1/s/'
+    PathtoPublish: '/home/vsts/work/1/s/target'
     ArtifactName: 'drop'
     publishLocation: 'Container'
