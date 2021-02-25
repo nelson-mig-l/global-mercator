@@ -29,6 +29,6 @@ steps:
       echo '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '/home/vsts/work/1/s/target/*.jar'
+    PathtoPublish: '/home/vsts/work/1/s/'
     ArtifactName: 'drop'
     publishLocation: 'Container'
