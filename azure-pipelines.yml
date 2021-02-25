@@ -31,6 +31,6 @@ steps:
       echo '$(Agent.BuildDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/target'
+    PathtoPublish: '$(Build.SourcesDirectory)/target/*.jar'
     ArtifactName: 'drop'
     publishLocation: 'Container'
