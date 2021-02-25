@@ -31,6 +31,6 @@ steps:
       echo '$(Agent.BuildDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '/home/vsts/work/1/s/target'
+    PathtoPublish: '$(Build.SourcesDirectory)/target'
     ArtifactName: 'drop'
     publishLocation: 'Container'
